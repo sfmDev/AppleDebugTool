@@ -1,10 +1,10 @@
 # AppleDebugTool
-- - - - 
+
 此工具是苹果私有的Debug 调试工具,idea 来自[链接](http://ryanipete.com/blog/ios/swift/objective-c/uidebugginginformationoverlay/)
 
 >警告
 > 此工具仅限于 Debug 阶段使用,在上线时最好移除,因为可能调用私有API而导致审核无法通过.
-- - - - 
+
 ## ScreenShots
 
 ![](./_image/WechatIMG13-2.jpeg)
@@ -33,3 +33,7 @@ AppleDebugTool.shared.debugToolsPos = .topLeft
 ## To Do
 * Cocoapods 支持
 * 移除 touchBegan方法,让使用更加简单
+
+## License
+
+AppleDebugTool is available under the MIT license. See the LICENSE file for more info.
