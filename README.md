@@ -31,3 +31,5 @@ AppleDebugTool.shared.debugToolsPos = .topLeft
 * 17.05.28 -- first commit
 
 ## To Do
+* Cocoapods 支持
+* 移除 touchBegan方法,让使用更加简单
