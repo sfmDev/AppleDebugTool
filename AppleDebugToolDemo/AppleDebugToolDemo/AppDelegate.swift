@@ -26,24 +26,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
 
-    /*
- 
-     - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-     [super touchesBegan:touches withEvent:event];
-     #if DEBUG
-     CGPoint location = [[[event allTouches] anyObject] locationInView:[self window]];
-     if (CGRectContainsPoint([UIApplication sharedApplication].statusBarFrame, location)) {
-     [[PrivateDebugTools shared]debugBtnTapped];
-     }
-     #elif TEST299
-     CGPoint location = [[[event allTouches] anyObject] locationInView:[self window]];
-     if (CGRectContainsPoint([UIApplication sharedApplication].statusBarFrame, location)) {
-     [[PrivateDebugTools shared]debugBtnTapped];
-     }
-     #endif
-     }
-    */
-
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         let location = ((event?.allTouches! as NSSet!).anyObject() as? UITouch)?.location(in: self.window)
         if UIApplication.shared.statusBarFrame.contains(location!) {
